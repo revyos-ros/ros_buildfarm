@@ -583,6 +583,8 @@ def get_system_architecture():
         return 'i386'
     if machine == 'aarch64':
         return 'armv8'
+    if machine == 'riscv64':
+        return 'riscv64'
     raise RuntimeError('Unable to determine architecture')
 
 
