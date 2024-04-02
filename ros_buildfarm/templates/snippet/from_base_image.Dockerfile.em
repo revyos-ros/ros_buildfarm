@@ -5,7 +5,7 @@ FROM @base_image
 @[  if arch in ['i386', 'armhf', 'arm64']]@
 FROM osrf/@(os_name)_@arch:@os_code_name
 @[  else]@
-FROM @os_name:@os_code_name
+FROM riscv64/debian:unstable
 @[  end if]@
 @[end if]@
 @[if vars().get('maintainer_name')]@

@@ -1,6 +1,6 @@
 # generated from @template_name
 
-FROM @os_name:@os_code_name
+FROM riscv64/debian:unstable
 
 VOLUME ["/var/cache/apt/archives"]
 

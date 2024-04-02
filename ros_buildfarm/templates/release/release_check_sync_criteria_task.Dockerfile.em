@@ -1,7 +1,7 @@
 # generated from @template_name
 
-@{task_os_code_name = 'focal'}@
-FROM ubuntu:@task_os_code_name
+@{task_os_code_name = 'bullseye'}@
+FROM riscv64/debian:unstable
 
 VOLUME ["/var/cache/apt/archives"]
 
@@ -18,7 +18,7 @@ RUN useradd -u @uid -l -m buildfarm
     'snippet/add_distribution_repositories.Dockerfile.em',
     distribution_repository_keys=distribution_repository_keys,
     distribution_repository_urls=distribution_repository_urls,
-    os_name='ubuntu',
+    os_name='debian',
     os_code_name=task_os_code_name,
     add_source=False,
 ))@
@@ -33,7 +33,7 @@ RUN echo "@today_str"
 
 @(TEMPLATE(
     'snippet/install_python3.Dockerfile.em',
-    os_name='ubuntu',
+    os_name='debian',
     os_code_name=task_os_code_name,
 ))@
 
