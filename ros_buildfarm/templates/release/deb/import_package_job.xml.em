@@ -37,7 +37,7 @@
   </properties>
 @(SNIPPET(
     'scm_git',
-    url='https://github.com/ros-infrastructure/reprepro-updater.git',
+    url='https://gitee.com/Z572/reprepro-updater',
     branch_name='refactor',
     relative_target_dir='reprepro-updater',
     refspec=None,
