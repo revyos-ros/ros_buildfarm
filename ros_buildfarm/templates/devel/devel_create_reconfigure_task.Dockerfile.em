@@ -37,7 +37,7 @@ RUN echo "@today_str"
     os_code_name=os_code_name,
 ))@
 
-RUN python3 -u /tmp/wrapper_scripts/apt.py update-install-clean -q -y git python3-catkin-pkg-modules python3-empy python3-pip python3-rosdistro-modules python3-yaml python3-jenkinsapi
+RUN python3 -u /tmp/wrapper_scripts/apt.py update-install-clean -q -y git python3-catkin-pkg python3-empy python3-pip python3-rosdistro-modules python3-yaml python3-jenkinsapi
 
 USER buildfarm
 ENTRYPOINT ["sh", "-c"]
