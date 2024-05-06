@@ -1,6 +1,6 @@
 # generated from @template_name
 
-FROM riscv64/debian:unstable
+FROM z572/revyos:build
 
 VOLUME ["/var/cache/apt/archives"]
 

@@ -1,7 +1,7 @@
 # generated from @template_name
 
 @{os_code_name = 'bullseye'}@
-FROM riscv64/debian:unstable
+FROM z572/revyos:build
 
 VOLUME ["/var/cache/apt/archives"]
 
