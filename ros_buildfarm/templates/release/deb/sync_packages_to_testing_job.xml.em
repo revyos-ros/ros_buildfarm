@@ -96,7 +96,7 @@
     script='\n'.join([
         'echo "# BEGIN SECTION: Clone custom reprepro-updater"',
         'rm -fr reprepro-updater',
-        'python3 -u $WORKSPACE/ros_buildfarm/scripts/wrapper/git.py clone --depth 1 -b refactor https://gitee.com/Z572/reprepro-updater reprepro-updater',
+        'python3 -u $WORKSPACE/ros_buildfarm/scripts/wrapper/git.py clone --depth 1 -b refactor https://github.com/revyos-ros/reprepro-updater reprepro-updater',
         'git -C reprepro-updater log -n 1',
         'rm -fr reprepro-updater/.git',
         'echo "# END SECTION"',

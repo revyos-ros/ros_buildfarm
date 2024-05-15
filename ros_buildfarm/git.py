@@ -23,7 +23,7 @@ from ros_buildfarm import __version__
 from ros_buildfarm.common import find_executable
 
 FALLBACK_REPOSITORY_URL = \
-    'https://gitee.com/Z572/ros_buildfarm'
+    'https://github.com/revyos-ros/ros_buildfarm'
 
 
 def get_repository():

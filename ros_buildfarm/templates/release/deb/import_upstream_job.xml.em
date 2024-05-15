@@ -45,7 +45,7 @@ Generated at @ESCAPE(now_str) from template '@ESCAPE(template_name)'</descriptio
   </properties>
 @(SNIPPET(
     'scm_git',
-    url='https://gitee.com/Z572/reprepro-updater',
+    url='https://github.com/revyos-ros/reprepro-updater',
     branch_name='refactor',
     relative_target_dir='reprepro-updater',
     refspec=None,
