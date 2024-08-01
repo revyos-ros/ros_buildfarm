@@ -27,6 +27,7 @@ def main(argv=sys.argv[1:]):
     known_error_strings = [
         'Error pulling image',
         'Server error: Status 502 while fetching image layer',
+        'Error response from daemon: error parsing HTTP 408 response body: invalid character \'<\' looking for beginning of value: "<html><body><h1>408 Request Time-out</h1>"'
     ]
     max_tries = 10
     rc, _ = call_docker_pull_repeatedly(base_image, known_error_strings, max_tries)
