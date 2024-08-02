@@ -21,7 +21,8 @@ def main(argv=sys.argv[1:]):
     max_tries = 10
     known_error_strings = [
         'Connection timed out',
-        'Couldn\'t connect to server'
+        'Couldn\'t connect to server',
+        'RPC failed;'
     ]
 
     command = argv[0]
