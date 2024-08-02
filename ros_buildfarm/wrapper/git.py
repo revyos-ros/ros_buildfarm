@@ -22,7 +22,8 @@ def main(argv=sys.argv[1:]):
     known_error_strings = [
         'Connection timed out',
         'Couldn\'t connect to server',
-        'RPC failed;'
+        'RPC failed;',
+        'The TLS connection was non-properly terminated'
     ]
 
     command = argv[0]
