@@ -15,15 +15,15 @@
     <hudson.views.LastSuccessColumn/>
     <hudson.views.LastFailureColumn/>
     <hudson.views.LastDurationColumn/>
-    <jenkins.plugins.extracolumns.BuildDescriptionColumn plugin="extra-columns@@1.26">
+    <jenkins.plugins.extracolumns.BuildDescriptionColumn plugin="extra-columns@@1.27">
       <columnWidth>80</columnWidth>
       <forceWidth>true</forceWidth>
     </jenkins.plugins.extracolumns.BuildDescriptionColumn>
     <hudson.views.BuildButtonColumn/>
-    <jenkins.plugins.extracolumns.TestResultColumn plugin="extra-columns@@1.26">
+    <jenkins.plugins.extracolumns.TestResultColumn plugin="extra-columns@@1.27">
       <testResultFormat>1</testResultFormat>
     </jenkins.plugins.extracolumns.TestResultColumn>
-    <io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn plugin="warnings-ng@@9.0.1">
+    <io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn plugin="warnings-ng@@11.3.0">
       <selectTools>false</selectTools>
       <tools>
         <io.jenkins.plugins.analysis.core.model.ToolSelection>
