@@ -23,7 +23,8 @@ def main(argv=sys.argv[1:]):
         'Connection timed out',
         'Couldn\'t connect to server',
         'RPC failed;',
-        'The TLS connection was non-properly terminated'
+        'The TLS connection was non-properly terminated',
+        'HTTP/2 stream 1 was not closed cleanly before end of the underlying stream'
     ]
 
     command = argv[0]
