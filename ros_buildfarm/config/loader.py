@@ -24,7 +24,7 @@ except ImportError:
     from urllib2 import URLError
 
 
-def load_url(url, retry=2, retry_period=1, timeout=10, skip_decode=False):
+def load_url(url, retry=20, retry_period=1, timeout=1000, skip_decode=False):
     try:
         fh = urlopen(url, timeout=timeout)
     except HTTPError as e:

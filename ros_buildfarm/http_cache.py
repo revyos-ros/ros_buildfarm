@@ -68,7 +68,7 @@ def _fetch_plain_url(url, dst_filename):
         f.write(_load_url(url))
 
 
-def _load_url(url, retry=2, retry_period=1, timeout=10):
+def _load_url(url, retry=20, retry_period=1, timeout=1000):
     try:
         fh = urlopen(url, timeout=timeout)
     except HTTPError as e:
