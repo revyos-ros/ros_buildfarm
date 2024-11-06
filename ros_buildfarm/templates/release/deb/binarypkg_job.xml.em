@@ -135,6 +135,7 @@ but disabled since the package is blacklisted (or not whitelisted) in the config
         'export PODMAN_USERNS=keep-id',
         'docker run' +
         ' --rm ' +
+        ' --security-opt seccomp=unconfined' +
         ' --cidfile=$WORKSPACE/docker_generating_docker/docker.cid' +
         ' -e=TRAVIS=$TRAVIS' +
         ' -e=ROS_BUILDFARM_PULL_REQUEST_BRANCH=$ROS_BUILDFARM_PULL_REQUEST_BRANCH' +
