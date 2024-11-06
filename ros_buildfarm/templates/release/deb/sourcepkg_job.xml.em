@@ -114,6 +114,7 @@ but disabled since the package is blacklisted (or not whitelisted) in the config
         'export PODMAN_USERNS=keep-id',
         'docker run' +
         ' --rm ' +
+        ' --security-opt seccomp=unconfined' +
         ' --cidfile=$WORKSPACE/docker_sourcedeb/docker.cid' +
         ' -e=TRAVIS=$TRAVIS' +
         ' --net=host' +
